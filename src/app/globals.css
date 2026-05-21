@@ -12,8 +12,8 @@
 @theme inline {
    /* Typography */
   --h1-fontsize: clamp(2rem, 1.8696rem + 0.6522vw, 2.375rem);
-  --h2-fontsize: clamp(2rem, 1.8696rem + 0.6522vw, 2.375rem);
-  --h3-fontsize: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+  --h2-fontsize: clamp(1.5rem, 1.3rem + 0.8vw, 1.75rem);
+  --h3-fontsize: clamp(1.2rem, 1.1rem + 0.4vw, 1.35rem);
   --h4-fontsize: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
   --eyebrow-fontsize: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   --p-fontsize: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
@@ -23,4 +23,9 @@ body {
   background: var(--color-white);
   color: var(--color-black);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: var(--h2-fontsize);
+  font-weight: bold;
 }

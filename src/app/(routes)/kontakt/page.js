@@ -1,4 +1,5 @@
 import Knap from "../../components/ui/Knap";
+import KontaktInformation from "../../components/ui/KontaktInformation";
 
 export default function KontaktOs() {
   return (
@@ -7,6 +8,7 @@ export default function KontaktOs() {
 
       <Knap variant="primary">Kontakt os</Knap>
     <Knap variant="secondary">Læs mere</Knap>
+      <KontaktInformation />
     </div>
   );
 }
