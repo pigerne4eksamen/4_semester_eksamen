@@ -1,23 +1,34 @@
-import { FiPhone } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
-import { LuClock3 } from "react-icons/lu";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
+import { BsClockFill } from "react-icons/bs";
+import KontaktBox from "./KontaktBox";
 
 export default function KontaktInformation() {
   return (
     <section>
-        <h2>Kontakt Information</h2>
     <div>
       <h2>Kontakt Information</h2>
-      <p>Her kan du finde vores kontaktoplysninger.</p>
       <ul>
         <li>
-          <FiPhone /> Telefon: 12345678
+          <KontaktBox
+            icon={<FaPhoneAlt size={32} />}
+            label="Telefon"
+            text="+45 26 13 80 37"
+          /> 
         </li>
         <li>
-          <HiOutlineMail /> Email: info@example.com
+          <KontaktBox
+            icon={<MdMail size={36} />}
+            label="Email"
+            text="info@example.com"
+          />
         </li>
         <li>
-          <LuClock3 /> Åbningstider: Man-Fre 9:00-17:00
+          <KontaktBox
+            icon={<BsClockFill size={32} />}
+            label="Åbningstider"
+            text="Man-Fre 9:00-17:00"
+          />
         </li>
       </ul>
     </div>
